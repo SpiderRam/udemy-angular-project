@@ -1,15 +1,15 @@
 <div class="row">
-  <div class="col-xs-12">
-    <img src="" alt="" class="img-responsive">
+  <div class="col-md-12">
+    <img [src]="recipe.imagePath" alt="{{ recipe.name }}" class="img-responsive">
   </div>
 </div>
 <div class="row">
-  <div class="col-xs-12">
-    <h1>Recipe Name</h1>
+  <div class="col-md-12">
+    <h1>{{ recipe.name }}</h1>
   </div>
 </div>
 <div class="row">
-  <div class="col-xs-12">
+  <div class="col-md-12">
     <div class="dropdown">
         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Manage Recipe</button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -21,8 +21,8 @@
   </div>
 </div>
 <div class="row">
-  <div class="col-xs-12">Description</div>
+  <div class="col-md-12">{{ recipe.description }}</div>
 </div>
 <div class="row">
-  <div class="col-xs-12">Ingredients</div>
+  <div class="col-md-12">Ingredients</div>
 </div>
